@@ -63,8 +63,13 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DataAccess\OracleServer\OracleStudentReposity.cs" />
+    <Compile Include="DataAccess\SqlServer\SqlStudentReposity.cs" />
+    <Compile Include="DataAccess\SqlServer\SqlUserReposity.cs" />
     <Compile Include="Domain\Abstraction\IStudentReposity.cs" />
+    <Compile Include="Domain\Abstraction\IUserReposity.cs" />
     <Compile Include="Domain\Entities\Student.cs" />
+    <Compile Include="Domain\Entities\User.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -96,9 +101,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DataAccess\OracleServer\" />
-    <Folder Include="DataAccess\SqlServer\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
