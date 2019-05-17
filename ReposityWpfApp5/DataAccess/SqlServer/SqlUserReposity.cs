@@ -5,22 +5,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace ReposityWpfApp5.DataAccess.SqlServer
 {
-    class SqlUserReposity : IUserReposity
+    class SqlUserReposity : IReposity<User>
     {
-        public void Add(User user)
+        public void Add(User obj)
         {
             throw new NotImplementedException();
         }
-        public User GetUser(int id)
+
+        public User Get(int id)
         {
             throw new NotImplementedException();
         }
-        public List<User> GetUsers()
+
+        public List<User> Get()
         {
             throw new NotImplementedException();
         }
     }
 }
+

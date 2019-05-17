@@ -66,8 +66,7 @@
     <Compile Include="DataAccess\OracleServer\OracleStudentReposity.cs" />
     <Compile Include="DataAccess\SqlServer\SqlStudentReposity.cs" />
     <Compile Include="DataAccess\SqlServer\SqlUserReposity.cs" />
-    <Compile Include="Domain\Abstraction\IStudentReposity.cs" />
-    <Compile Include="Domain\Abstraction\IUserReposity.cs" />
+    <Compile Include="Domain\Abstraction\IReposity.cs" />
     <Compile Include="Domain\Entities\Student.cs" />
     <Compile Include="Domain\Entities\User.cs" />
     <Compile Include="MainWindow.xaml.cs">

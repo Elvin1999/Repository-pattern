@@ -8,19 +8,20 @@ using System.Threading.Tasks;
 
 namespace ReposityWpfApp5.DataAccess.SqlServer
 {
-    class SqlStudentReposity : IStudentReposity
+    class SqlStudentReposity : IReposity<Student>
+
     {
-        public void Add(Student student)
+        public void Add(Student obj)
         {
             throw new NotImplementedException();
         }
 
-        public Student GetStudent(int id)
+        public Student Get(int id)
         {
             throw new NotImplementedException();
         }
 
-        public List<Student> GetStudents()
+        public List<Student> Get()
         {
             throw new NotImplementedException();
         }
