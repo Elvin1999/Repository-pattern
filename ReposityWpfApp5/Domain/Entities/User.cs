@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ReposityWpfApp5.Domain.Entities
 {
-    class User
+    public class User
     {
         public int Id { get; set; }
         public int No { get; set; }

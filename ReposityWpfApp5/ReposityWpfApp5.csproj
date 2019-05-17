@@ -64,9 +64,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DataAccess\OracleServer\OracleStudentReposity.cs" />
+    <Compile Include="DataAccess\SqlServer\SqContext.cs" />
     <Compile Include="DataAccess\SqlServer\SqlStudentReposity.cs" />
+    <Compile Include="DataAccess\SqlServer\SqlUnitOfWork.cs" />
     <Compile Include="DataAccess\SqlServer\SqlUserReposity.cs" />
     <Compile Include="Domain\Abstraction\IReposity.cs" />
+    <Compile Include="Domain\Abstraction\IStudentRepository.cs" />
+    <Compile Include="Domain\Abstraction\IUnitOfWork.cs" />
+    <Compile Include="Domain\Abstraction\IUserRepository.cs" />
     <Compile Include="Domain\Entities\Student.cs" />
     <Compile Include="Domain\Entities\User.cs" />
     <Compile Include="MainWindow.xaml.cs">

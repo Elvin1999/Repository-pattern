@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ReposityWpfApp5.DataAccess.SqlServer;
+using ReposityWpfApp5.Domain.Abstraction;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +22,16 @@ namespace ReposityWpfApp5
     /// </summary>
     public partial class MainWindow : Window
     {
+        //IUserRepository UserRepository;
+        //IStudentRepository StudentRepository;
+
+        IUnitOfWork Db;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            //UserRepository = new SqlUserRepository();
         }
     }
 }

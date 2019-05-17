@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace ReposityWpfApp5.Domain.Abstraction
 {
-    public interface IRepository<T>
+    public interface IUnitOfWork
     {
-        void Add(T obj);
-        T Get(int id);
-        List<T> Get();
+        void SaveChanges();
+
+
+        IUserRepository UserRepository { get; }
+        IStudentRepository StudentRepository { get; }
     }
 }
